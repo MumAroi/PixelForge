@@ -186,8 +186,8 @@ Future:
 
 | Task | สิ่งที่จะทำ | Rust Concepts | Status |
 |---|---|---|---|
-| M1.1 Environment Setup | ตรวจสอบ Rust, Cargo และ Toolchain | Toolchain / Cargo | [ ] |
-| M1.2 Create Project | สร้างโปรเจกต์และตั้งค่า raylib-rs | Crates / Modules | [ ] |
+| M1.1 Environment Setup | ตรวจสอบ Rust, Cargo และ Toolchain | Toolchain / Cargo | [x] |
+| M1.2 Create Project | สร้างโปรเจกต์และตั้งค่า raylib-rs | Crates / Modules | [x] |
 | M1.3 First Window | เปิด / ปิด Window | Variables / Functions / Ownership | [ ] |
 | M1.4 Game Loop | Main Loop / Update / Render | Loop / Scope / Control Flow | [ ] |
 | M1.5 Time System | Delta Time / FPS | `f32`, `f64`, Struct / Methods | [ ] |
@@ -241,16 +241,13 @@ Milestone จะถือว่าเสร็จเมื่อ:
 4. ไม่เพิ่ม Feature นอก Scope โดยไม่จำเป็น
 5. สรุปสิ่งที่เรียนรู้และข้อจำกัดก่อนขึ้น Milestone ถัดไป
 
-## 9. Next Step — M1.1 Environment Setup
+## 9. Next Step — M1.3 First Window
 
-ยังไม่ต้องเขียน Engine Code ให้ตรวจสอบเครื่องมือก่อน:
+ตรวจสอบ M1.1–M1.2 แล้ว: Rust / Cargo 1.95.0, Windows MSVC, raylib-rs 6.0.0 และ `cargo build` / `cargo run` ผ่าน โดยโปรแกรมยังแสดง `Hello, world!`
 
-```bash
-rustc --version
-cargo --version
-```
+คำสั่งตั้งค่า CMake และ libclang สำหรับเครื่องนี้อยู่ใน [README.md](README.md)
 
-จากนั้นตรวจสอบระบบปฏิบัติการและความเข้ากันได้ของ raylib-rs แล้วจึงเริ่ม M1.2 Create Project
+ขั้นถัดไป: เปิดหน้าต่าง 1280×720 ด้วย raylib-rs และเรียนรู้การถือครอง Window Handle กับการปิดหน้าต่าง
 
 ---
 
